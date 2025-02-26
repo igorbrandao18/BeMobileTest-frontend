@@ -1,0 +1,44 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "position": "Software Engineer",
+      "admissionDate": "2023-01-15",
+      "phone": "11999999999",
+      "thumbnail": "https://randomuser.me/api/portraits/men/1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "position": "Product Manager",
+      "admissionDate": "2022-08-20",
+      "phone": "11988888888",
+      "thumbnail": "https://randomuser.me/api/portraits/women/1.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Michael Johnson",
+      "position": "UX Designer",
+      "admissionDate": "2023-03-10",
+      "phone": "11977777777",
+      "thumbnail": "https://randomuser.me/api/portraits/men/2.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Sarah Williams",
+      "position": "Software Engineer",
+      "admissionDate": "2023-05-01",
+      "phone": "11966666666",
+      "thumbnail": "https://randomuser.me/api/portraits/women/2.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Robert Brown",
+      "position": "Tech Lead",
+      "admissionDate": "2022-11-15",
+      "phone": "11955555555",
+      "thumbnail": "https://randomuser.me/api/portraits/men/3.jpg"
+    }
+  ]
+} 

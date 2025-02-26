@@ -1,50 +1,151 @@
-# Welcome to your Expo app 👋
+# BeMobile Technical Test - Employee Table
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## 📋 Project Overview
+This is a React Native application that displays a table of employees with search functionality. The application consumes data from a simulated API using json-server.
 
-## Get started
+## 🎯 Features
+- Display employee information in a table format including:
+  - User thumbnail
+  - Name
+  - Position
+  - Admission date
+  - Phone number
+- Search functionality that filters by:
+  - Position
+  - Name
+  - Phone number
+- Properly formatted dates and phone numbers
+- Modern and responsive UI following the provided Figma design
 
-1. Install dependencies
+## 🛠️ Technical Requirements
+- React Native
+- TypeScript
+- Node.js
+- Yarn
+- json-server (for simulated API)
 
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+## 📁 Project Structure
+```
+src/
+├── components/         # Reusable UI components
+├── screens/           # Application screens
+├── services/          # API and other services
+├── types/            # TypeScript type definitions
+├── utils/            # Helper functions and constants
+└── assets/           # Images and other static assets
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🚀 Getting Started
 
-## Learn more
+### Prerequisites
+- Node.js (latest LTS version)
+- Yarn package manager
+- React Native development environment setup
+- Android Studio or Xcode (depending on target platform)
 
-To learn more about developing your project with Expo, look at the following resources:
+### Installation
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+1. Clone the repository:
+```bash
+git clone [repository-url]
+```
 
-## Join the community
+2. Install dependencies:
+```bash
+yarn install
+```
 
-Join our community of developers creating universal apps.
+3. Start the json-server (API simulation):
+```bash
+json-server --watch db.json
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+4. Run the application:
+```bash
+# For iOS
+yarn ios
+
+# For Android
+yarn android
+```
+
+## 📱 API Integration
+The application connects to a local json-server instance that provides employee data. The API endpoint structure is:
+
+- GET /employees - Fetch all employees
+
+## 🎨 UI/UX Implementation
+- Modern and clean interface
+- Responsive design that works across different device sizes
+- Smooth animations and transitions
+- Error handling and loading states
+- Search functionality with real-time filtering
+
+## 📦 Dependencies
+- React Native
+- TypeScript
+- Axios (for API requests)
+- react-native-vector-icons (for icons)
+- date-fns (for date formatting)
+- styled-components (for styling)
+
+## 🧪 Testing
+- Unit tests for components and utilities
+- Integration tests for API services
+- E2E tests for critical user flows
+
+## 📝 Code Style
+- ESLint configuration for code linting
+- Prettier for code formatting
+- TypeScript strict mode enabled
+- Consistent naming conventions and code organization
+
+## 🔍 Development Practices
+- Component-based architecture
+- TypeScript for type safety
+- Clean and maintainable code
+- Proper error handling
+- Performance optimization
+- Code documentation
+
+## 🏗️ Design Patterns & Architecture
+- **Design Patterns**:
+  - Factory Pattern: For creating service instances
+  - Observer Pattern: For state management and real-time updates
+  - Strategy Pattern: For implementing different search/filter strategies
+  - Adapter Pattern: For API integration and data transformation
+  - Singleton Pattern: For service instances and configuration
+
+- **Architectural Patterns**:
+  - Clean Architecture: Separation of concerns with layers
+    - Domain Layer: Business logic and entities
+    - Data Layer: API calls and data persistence
+    - Presentation Layer: UI components and state management
+  
+- **SOLID Principles**:
+  - Single Responsibility Principle
+  - Open/Closed Principle
+  - Liskov Substitution Principle
+  - Interface Segregation Principle
+  - Dependency Inversion Principle
+
+- **State Management**:
+  - Unidirectional data flow
+  - Immutable state updates
+  - Centralized state management
+
+- **Code Organization**:
+  - Feature-based folder structure
+  - Dependency injection
+  - Interface-driven development
+  - Repository pattern for data access
+
+## 📈 Future Improvements
+- Add pagination for large data sets
+- Implement sorting functionality
+- Add more filter options
+- Offline support
+- Dark mode support
+
+## 📄 License
+This project is part of a technical interview test for BeMobile. 
