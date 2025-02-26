@@ -1,66 +1,93 @@
-# BeMobile Technical Test - Employee Table
+# 👥 BeMobile Employee Management System
 
-## 📋 Project Overview
-This is a React Native application that displays a table of employees with search functionality. The application consumes data from a simulated API using json-server.
+<div align="center">
 
-## 🎯 Features
-- Display employee information in a table format including:
-  - User thumbnail
-  - Name
-  - Position
-  - Admission date
-  - Phone number
-- Search functionality that filters by:
-  - Position
-  - Name
-  - Phone number
-- Properly formatted dates and phone numbers
-- Modern and responsive UI following the provided Figma design
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Expo](https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 
-## 🛠️ Technical Requirements
-- React Native
-- TypeScript
-- Node.js
-- Yarn
-- json-server (for simulated API)
+A modern and feature-rich employee management system built with React Native and TypeScript.
 
-## 📁 Project Structure
-```
-src/
-├── components/         # Reusable UI components
-├── screens/           # Application screens
-├── services/          # API and other services
-├── types/            # TypeScript type definitions
-├── utils/            # Helper functions and constants
-└── assets/           # Images and other static assets
-```
+</div>
+
+## ✨ Features
+
+### 📱 Core Functionality
+- **Employee List**
+  - Modern card-based interface
+  - Quick access to employee details
+  - Interactive elements for calls and sharing
+  - Smooth animations and transitions
+
+- **Employee Details**
+  - Comprehensive employee information
+  - Professional details and skills
+  - Contact information with direct actions
+  - Emergency contacts
+  - Document information
+  - Address details
+
+- **Search & Filter**
+  - Real-time search functionality
+  - Filter by name, position, or phone
+  - Smart sorting capabilities
+  - Instant results update
+
+### 🎨 UI/UX Features
+- **Theme System**
+  - Light and dark mode support
+  - Automatic system theme detection
+  - Runtime theme switching
+  - Consistent color palette
+
+- **Modern Design**
+  - Clean and intuitive interface
+  - Responsive layouts
+  - Smooth animations
+  - Gesture support
+  - Loading states and error handling
+
+### 🔧 Technical Features
+- TypeScript for type safety
+- Component-based architecture
+- Context API for state management
+- Custom hooks for business logic
+- Responsive design patterns
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js (latest LTS version)
+- Node.js (LTS version)
 - Yarn package manager
-- React Native development environment setup
-- Android Studio or Xcode (depending on target platform)
+- Expo CLI
+- iOS Simulator or Android Emulator
 
 ### Installation
 
-1. Clone the repository:
+1. **Clone the repository**
 ```bash
-git clone [repository-url]
+git clone https://github.com/your-username/BeMobileTest-frontend.git
+cd BeMobileTest-frontend
 ```
 
-2. Install dependencies:
+2. **Install dependencies**
 ```bash
 yarn install
 ```
 
-3. Start the json-server (API simulation):
+3. **Start the development server**
 ```bash
-json-server --watch db.json
+yarn start
 ```
 
-4. Run the application:
+4. **Run the API server**
+```bash
+# In a new terminal window
+yarn api
+```
+
+5. **Run on your preferred platform**
 ```bash
 # For iOS
 yarn ios
@@ -69,83 +96,77 @@ yarn ios
 yarn android
 ```
 
-## 📱 API Integration
-The application connects to a local json-server instance that provides employee data. The API endpoint structure is:
+## 🛠️ Technical Architecture
 
-- GET /employees - Fetch all employees
+### Project Structure
+```
+src/
+├── components/          # Reusable UI components
+│   ├── EmployeeCard    # Employee card component
+│   ├── EmployeeDetails # Employee details modal
+│   ├── EmployeeList    # List view component
+│   └── styles/         # Component styles
+├── contexts/           # React Context providers
+├── screens/            # Application screens
+├── services/           # API and services
+├── types/             # TypeScript definitions
+└── utils/             # Helper functions
+```
 
-## 🎨 UI/UX Implementation
-- Modern and clean interface
-- Responsive design that works across different device sizes
-- Smooth animations and transitions
-- Error handling and loading states
-- Search functionality with real-time filtering
+### Key Technologies
+- **React Native**: Mobile app framework
+- **TypeScript**: Type safety and developer experience
+- **Expo**: Development platform
+- **Styled Components**: Styling solution
+- **React Native Reanimated**: Animations
+- **React Native Gesture Handler**: Gesture system
 
-## 📦 Dependencies
-- React Native
-- TypeScript
-- Axios (for API requests)
-- react-native-vector-icons (for icons)
-- date-fns (for date formatting)
-- styled-components (for styling)
+## 📱 Features Showcase
 
-## 🧪 Testing
-- Unit tests for components and utilities
-- Integration tests for API services
-- E2E tests for critical user flows
+### Employee Management
+- View complete employee list
+- Search and filter capabilities
+- Sort by multiple criteria
+- Detailed employee profiles
 
-## 📝 Code Style
-- ESLint configuration for code linting
-- Prettier for code formatting
-- TypeScript strict mode enabled
-- Consistent naming conventions and code organization
+### Interactive Features
+- Click-to-call functionality
+- Email integration
+- Share employee information
+- Emergency contact access
+
+### UI Components
+- Custom themed components
+- Responsive layouts
+- Loading states
+- Error boundaries
+- Toast notifications
 
 ## 🔍 Development Practices
-- Component-based architecture
-- TypeScript for type safety
-- Clean and maintainable code
-- Proper error handling
-- Performance optimization
-- Code documentation
 
-## 🏗️ Design Patterns & Architecture
-- **Design Patterns**:
-  - Factory Pattern: For creating service instances
-  - Observer Pattern: For state management and real-time updates
-  - Strategy Pattern: For implementing different search/filter strategies
-  - Adapter Pattern: For API integration and data transformation
-  - Singleton Pattern: For service instances and configuration
+### Code Quality
+- ESLint configuration
+- Prettier formatting
+- TypeScript strict mode
+- Component documentation
 
-- **Architectural Patterns**:
-  - Clean Architecture: Separation of concerns with layers
-    - Domain Layer: Business logic and entities
-    - Data Layer: API calls and data persistence
-    - Presentation Layer: UI components and state management
-  
-- **SOLID Principles**:
-  - Single Responsibility Principle
-  - Open/Closed Principle
-  - Liskov Substitution Principle
-  - Interface Segregation Principle
-  - Dependency Inversion Principle
+### Performance
+- Optimized list rendering
+- Efficient state updates
+- Lazy loading
+- Memoization
 
-- **State Management**:
-  - Unidirectional data flow
-  - Immutable state updates
-  - Centralized state management
-
-- **Code Organization**:
-  - Feature-based folder structure
-  - Dependency injection
-  - Interface-driven development
-  - Repository pattern for data access
-
-## 📈 Future Improvements
-- Add pagination for large data sets
-- Implement sorting functionality
-- Add more filter options
-- Offline support
-- Dark mode support
+## 🤝 Contributing
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
 
 ## 📄 License
-This project is part of a technical interview test for BeMobile. 
+This project is part of a technical interview test for BeMobile.
+
+## 🙏 Acknowledgments
+- BeMobile team for the project requirements
+- React Native community
+- Open source contributors 
