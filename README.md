@@ -9,6 +9,8 @@
 
 A modern and feature-rich employee management system built with React Native and TypeScript.
 
+**Author:** [Igor Brandão](https://github.com/igorbrandao18)
+
 </div>
 
 ## ✨ Features
@@ -67,7 +69,7 @@ A modern and feature-rich employee management system built with React Native and
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/your-username/BeMobileTest-frontend.git
+git clone https://github.com/igorbrandao18/BeMobileTest-frontend.git
 cd BeMobileTest-frontend
 ```
 
@@ -157,7 +159,7 @@ src/
 - Memoization
 
 ## 🤝 Contributing
-1. Fork the repository
+1. Fork the repository from [https://github.com/igorbrandao18/BeMobileTest-frontend](https://github.com/igorbrandao18/BeMobileTest-frontend)
 2. Create your feature branch
 3. Commit your changes
 4. Push to the branch
@@ -165,6 +167,9 @@ src/
 
 ## 📄 License
 This project is part of a technical interview test for BeMobile.
+
+## 👨‍💻 Author
+**Igor Brandão** - [GitHub](https://github.com/igorbrandao18)
 
 ## 🙏 Acknowledgments
 - BeMobile team for the project requirements
